@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "animate.css";
+import TheFooter from "./components/TheFooter";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`min-h-svh w-screen max-w-full flex flex-col mx-auto relative ${inter.className} antialiased`}
+      >
+        {children}
+        <TheFooter />
+        <Analytics />
+      </body>
     </html>
   );
 }
