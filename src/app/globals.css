@@ -4,12 +4,8 @@
 
 :root {
   --primaryLight: #f8f6f2;
-  --primaryDark: #1b1f27;
-  --primaryMid: #eae3d7;
-  --primaryBlue: #1c376d;
-  --secondaryBlue: #465b84;
-  --accentBlue: #5f78a9;
-  --header-height: 105px;
+  --primaryDark: #291a09;
+  --primaryAccent: #b8860b;
 }
 
 body {
@@ -24,5 +20,4 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: var(--header-height);
 }

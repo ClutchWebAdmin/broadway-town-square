@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "animate.css";
 import TheFooter from "./components/TheFooter";
 import { Analytics } from "@vercel/analytics/react";
-
-const inter = Inter({ subsets: ["latin"] });
+import { recia, supreme } from "./styles/fonts";
+import TheHeader from "./components/TheHeader";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,10 +12,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`min-h-svh w-screen max-w-full flex flex-col mx-auto relative ${inter.className} antialiased`}
-      >
+    <html lang="en" className={`${supreme.variable} ${recia.variable}`}>
+      <body className="min-h-svh w-screen max-w-full flex flex-col mx-auto relative antialiased font-sans scroll-smooth">
+        <TheHeader />
         {children}
         <TheFooter />
         <Analytics />

@@ -1,10 +1,7 @@
-import TheHeader from "./components/TheHeader";
-
 export default function HomePage() {
   return (
-    <>
-      <TheHeader />
-      <main className="p-5">Home Page</main>
-    </>
+    <main>
+      <h1 className="px-5">Home Page</h1>
+    </main>
   );
 }

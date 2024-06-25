@@ -10,10 +10,11 @@ module.exports = {
       colors: {
         primaryDark: "var(--primaryDark)",
         primaryLight: "var(--primaryLight)",
-        primaryMid: "var(--primaryMid)",
-        primaryBlue: "var(--primaryBlue)",
-        secondaryBlue: "var(--secondaryBlue)",
-        accentBlue: "var(--accentBlue)",
+        primaryAccent: "var(--primaryAccent)",
+      },
+      fontFamily: {
+        sans: ["var(--font-supreme)"],
+        serif: ["var(--font-recia)"],
       },
     },
   },
