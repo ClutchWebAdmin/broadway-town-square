@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function TheHeader() {
   return (
     <header className="flex flex-col">
-      <nav className="flex flex-row items-start w-full h-fit justify-between z-50 p-5">
+      <nav className="flex flex-row items-start w-full h-fit justify-between p-5">
         <div className="flex w-fit">
           <Link href="/" className="flex">
             Broadway Town Square

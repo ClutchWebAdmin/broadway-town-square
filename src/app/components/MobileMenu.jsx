@@ -27,7 +27,7 @@ export default function MobileMenu() {
 
   return (
     <>
-      <div className={isMobileMenuOpen ? "hidden" : "lg:hidden flex"}>
+      <div className={isMobileMenuOpen ? "hidden" : "lg:hidden"}>
         <button
           id="open-mobile-menu"
           aria-label="open-mobile-menu"

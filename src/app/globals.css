@@ -11,6 +11,7 @@
 body {
   background-color: var(--primaryLight);
   color: var(--primaryDark);
+  box-sizing: border-box;
 }
 
 main {
