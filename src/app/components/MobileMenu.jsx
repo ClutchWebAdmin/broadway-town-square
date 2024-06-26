@@ -32,8 +32,9 @@ export default function MobileMenu() {
           id="open-mobile-menu"
           aria-label="open-mobile-menu"
           onClick={toggleMobileMenu}
+          className="text-lg"
         >
-          <AiOutlineMenu className="h-8 w-8" />
+          Menu
         </button>
       </div>
 
@@ -42,25 +43,18 @@ export default function MobileMenu() {
           id="close-mobile-menu"
           aria-label="close-mobile-menu"
           onClick={toggleMobileMenu}
-          className="lg:hidden z-[9998] animate__animated animate__rotateIn"
+          className="lg:hidden z-[9998] animate__animated animate__fadeInDown text-lg"
         >
-          <AiOutlineClose className="h-8 w-8" />
+          Close
         </button>
       )}
 
       {isMobileMenuOpen && (
         <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown">
-          <Link
-            href={`/`}
-            className="py-5 px-5 border-b font-serif font-medium text-2xl"
-          >
+          <Link href={`/`} className="py-5 px-5 border-b text-lg">
             Broadway Town Square
           </Link>
-          <h3 className="p-5 text-lg border-b">
-            1127 Broadway St NE
-            <br />
-            Salem, Oregon 97301
-          </h3>
+
           <div className="flex flex-col h-full items-start justify-start text-4xl">
             {navLinks.map((item, index) => (
               <Link
@@ -89,6 +83,13 @@ export default function MobileMenu() {
               Call Us
             </a>
           </div>
+          <h3 className="p-5 text-lg border-b">
+            Address:
+            <br />
+            1127 Broadway St NE
+            <br />
+            Salem, Oregon 97301
+          </h3>
         </nav>
       )}
     </>

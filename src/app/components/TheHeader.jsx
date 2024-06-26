@@ -6,13 +6,8 @@ export default function TheHeader() {
   return (
     <header className="absolute w-full">
       <nav className="flex flex-row items-start w-full h-fit justify-between p-5">
-        <div className="flex w-fit">
-          <Link
-            href="/"
-            className="font-medium font-serif text-2xl md:text-2xl lg:text-3xl"
-          >
-            Broadway Town Square
-          </Link>
+        <div className="flex w-fit text-lg lg:text-2xl">
+          <Link href="/">Broadway Town Square</Link>
         </div>
         <div className="hidden lg:flex flex-row justify-end gap-5 w-fit">
           {navLinks.map((item, index) => (
