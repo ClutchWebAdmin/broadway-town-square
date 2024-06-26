@@ -49,9 +49,14 @@ export default function MobileMenu() {
       )}
 
       {isMobileMenuOpen && (
-        <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown text-4xl">
-          <h1 className="p-5 h-[var(--header-height)] border-b">Logo</h1>
-          <div className="flex flex-col h-full items-start justify-startborder-t">
+        <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown">
+          <Link
+            href={`/`}
+            className="p-5 border-b font-serif font-medium text-xl"
+          >
+            Broadway Town Square
+          </Link>
+          <div className="flex flex-col h-full items-start justify-start text-4xl">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
@@ -62,7 +67,28 @@ export default function MobileMenu() {
                 {item.text}
               </Link>
             ))}
+            <a
+              href="mailto:propertymanager@clutchindustries.com"
+              target="_blank"
+              className="border-b w-full p-5"
+              onClick={toggleMobileMenu}
+            >
+              Email Us
+            </a>
+            <a
+              href="tel:+15035077605"
+              target="_blank"
+              className="border-b w-full p-5"
+              onClick={toggleMobileMenu}
+            >
+              Call Us
+            </a>
           </div>
+          <h3 className="font-serif text-xl font-medium p-5">
+            1127 Broadway St NE
+            <br />
+            Salem, Oregon 97301
+          </h3>
         </nav>
       )}
     </>

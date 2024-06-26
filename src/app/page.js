@@ -1,3 +1,9 @@
+import Hero from "./components/Hero";
+
 export default function HomePage() {
-  return <main className="px-5">Home Page</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }

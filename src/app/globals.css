@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primaryLight: #f8f6f2;
-  --primaryDark: #291a09;
+  --primaryLight: #fefdfa;
+  --primaryDark: #291309;
   --primaryAccent: #b8860b;
+  --headerHeightDesktop: 68px;
+  --headerHeightMobile: 78px;
 }
 
 body {
