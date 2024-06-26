@@ -14,7 +14,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-supreme)"],
-        serif: ["var(--font-recia)"],
       },
     },
   },
