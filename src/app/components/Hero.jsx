@@ -4,7 +4,12 @@ import placeholder from "../../../public/images/hero.png";
 export default function Hero() {
   return (
     <section className="flex flex-row h-svh relative -z-10">
-      <Image src={placeholder} className="w-full h-full object-cover" />
+      <Image
+        src={placeholder}
+        className="w-full h-full object-cover"
+        priority
+        placeholder="blur"
+      />
       <div className="absolute hidden lg:grid grid-cols-1 lg:grid-cols-3 items-end p-5 w-full h-full">
         <h3 className="font-serif text-xl font-medium">1127 Broadway St NE</h3>
         <h3 className="font-serif text-xl font-medium justify-center flex">
