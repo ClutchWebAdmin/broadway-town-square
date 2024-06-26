@@ -43,14 +43,14 @@ export default function MobileMenu() {
           id="close-mobile-menu"
           aria-label="close-mobile-menu"
           onClick={toggleMobileMenu}
-          className="lg:hidden z-[9998] animate__animated animate__fadeInDown text-lg"
+          className="lg:hidden z-[9998] text-lg text-primaryLight"
         >
           Close
         </button>
       )}
 
       {isMobileMenuOpen && (
-        <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown">
+        <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryDark text-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown">
           <Link href={`/`} className="py-5 px-5 border-b text-lg">
             Broadway Town Square
           </Link>
@@ -83,7 +83,7 @@ export default function MobileMenu() {
               Call Us
             </a>
           </div>
-          <h3 className="p-5 text-lg border-b">
+          <h3 className="p-5 text-lg">
             Address:
             <br />
             1127 Broadway St NE
