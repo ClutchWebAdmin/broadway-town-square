@@ -1,3 +1,5 @@
+import PhotosSection from "../components/PhotosSection";
+
 export const metadata = {
   title: "Photos | Broadway Town Square Apartments",
   description: "1127 Broadway St E, Salem, Oregon, 97301",
