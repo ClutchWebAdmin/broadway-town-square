@@ -6,7 +6,7 @@ export default function TheHeader() {
   return (
     <header className="absolute w-full">
       <nav className="flex flex-row items-start w-full h-fit justify-between p-5">
-        <div className="flex w-fit text-lg lg:text-2xl">
+        <div className="flex w-fit text-lg lg:text-2xl hover:text-primaryAccent transition duration-300">
           <Link href="/">Broadway Town Square</Link>
         </div>
         <div className="hidden lg:flex flex-row justify-end gap-5 w-fit">
@@ -14,7 +14,7 @@ export default function TheHeader() {
             <Link
               key={index}
               href={item.linkTo}
-              className="hover:bg-gray-100 px-2 py-0.5 rounded-md"
+              className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
             >
               {item.text}
             </Link>
@@ -22,14 +22,14 @@ export default function TheHeader() {
           <a
             href="mailto:propertymanager@clutchindustries.com"
             target="_blank"
-            className="hover:bg-gray-100 px-2 py-0.5 rounded-md"
+            className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
           >
             Availability
           </a>
           <a
             href="tel:+15035077605"
             target="_blank"
-            className="hover:bg-gray-100 px-2 py-0.5 rounded-md"
+            className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
           >
             503-507-7605
           </a>

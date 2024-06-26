@@ -8,7 +8,7 @@ export default function TheFooter() {
         <Image
           src={equalOpportunity}
           alt="Equal Housing Opportunity"
-          className="w-[75px] lg:w-[40px] h-auto"
+          className="w-[75px] lg:w-[60px] h-auto"
         />
       </div>
       <a

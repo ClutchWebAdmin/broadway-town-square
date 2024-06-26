@@ -60,7 +60,7 @@ export default function MobileMenu() {
               <Link
                 key={index}
                 href={item.linkTo}
-                className="border-b w-full p-5"
+                className="border-b w-full p-5 hover:text-primaryAccent"
                 onClick={toggleMobileMenu}
               >
                 {item.text}
@@ -69,7 +69,7 @@ export default function MobileMenu() {
             <a
               href="mailto:propertymanager@clutchindustries.com"
               target="_blank"
-              className="border-b w-full p-5"
+              className="border-b w-full p-5 hover:text-primaryAccent"
               onClick={toggleMobileMenu}
             >
               Email Us
@@ -77,7 +77,7 @@ export default function MobileMenu() {
             <a
               href="tel:+15035077605"
               target="_blank"
-              className="border-b w-full p-5"
+              className="border-b w-full p-5 hover:text-primaryAccent"
               onClick={toggleMobileMenu}
             >
               Call Us
