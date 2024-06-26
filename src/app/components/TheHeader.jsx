@@ -24,7 +24,7 @@ export default function TheHeader() {
             target="_blank"
             className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
           >
-            Availability
+            Contact Us
           </a>
           <a
             href="tel:+15035077605"
