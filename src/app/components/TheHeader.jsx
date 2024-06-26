@@ -11,7 +11,7 @@ export default function TheHeader() {
             Broadway Town Square
           </Link>
         </div>
-        <div className="hidden lg:flex flex-row justify-end gap-5 w-fit text-sm">
+        <div className="hidden lg:flex flex-row justify-end gap-5 w-fit">
           {navLinks.map((item, index) => (
             <Link
               key={index}
