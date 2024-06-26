@@ -42,7 +42,7 @@ export default function FloorPlansSection() {
   const currentLayout = selectedLayout === "A" ? layoutA : layoutB;
 
   return (
-    <section className="flex flex-col lg:flex-row gap-10 text-lg">
+    <section className="flex flex-col lg:flex-row lg:gap-10 text-lg">
       <div className="flex flex-col w-full lg:w-1/3">
         <div className=" flex flex-col gap-2"></div>
         <h1 className="text-5xl mb-10">Floor Plans</h1>
@@ -74,12 +74,23 @@ export default function FloorPlansSection() {
           </p>
         </div>
 
-        <div className="py-3 mt-10 border-b border-gray-400">
+        <div className="hidden lg:flex py-3 mt-10 border-b border-gray-400">
           <p>{currentLayout.amenities.join(", ")}</p>
+        </div>
+
+        <div className="lg:hidden flex flex-col">
+          <Image
+            src={currentLayout.imageUrl}
+            alt={`Layout ${selectedLayout}`}
+            className="w-auto h-auto mt-10"
+          />
+          <div className="py-3 mt-10 border-b border-gray-400">
+            <p>{currentLayout.amenities.join(", ")}</p>
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col w-full lg:w-2/3">
+      <div className="hidden lg:flex flex-col w-full lg:w-2/3">
         <Image
           src={currentLayout.imageUrl}
           alt={`Layout ${selectedLayout}`}
