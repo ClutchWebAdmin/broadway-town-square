@@ -19,7 +19,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute grid lg:hidden grid-cols-1 items-end p-5 w-full h-full">
-        <h3 className="text-xl font-medium">
+        <h3 className="text-2xl lg:font-medium">
           1127 Broadway St NE
           <br />
           Salem, Oregon 97301

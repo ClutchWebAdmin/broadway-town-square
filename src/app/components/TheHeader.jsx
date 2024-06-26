@@ -9,7 +9,7 @@ export default function TheHeader() {
         <div className="flex w-fit">
           <Link
             href="/"
-            className="font-medium font-serif text-xl md:text-2xl lg:text-3xl"
+            className="font-medium font-serif text-2xl md:text-2xl lg:text-3xl"
           >
             Broadway Town Square
           </Link>
