@@ -164,7 +164,7 @@ export default function PhotosSection() {
           ref={livingAreaRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Living Area</h3>
-          <div className="flex flex-row w-full overflow-x-scroll gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5 scrollbar scrollbar-thumb-primaryAccent scrollbar-track-transparent pb-1">
             {livingAreaImages.map((item, index) => (
               <ImageCard item={item} key={index} />
             ))}
@@ -177,7 +177,7 @@ export default function PhotosSection() {
           ref={kitchenRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Kitchen</h3>
-          <div className="flex flex-row w-full overflow-x-scroll gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5 scrollbar scrollbar-thumb-primaryAccent scrollbar-track-transparent pb-1">
             {kitchenImages.map((item, index) => (
               <ImageCard item={item} key={index} />
             ))}
@@ -190,7 +190,7 @@ export default function PhotosSection() {
           ref={bedroomsRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Bedrooms</h3>
-          <div className="flex flex-row w-full overflow-x-scroll gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5 scrollbar scrollbar-thumb-primaryAccent scrollbar-track-transparent pb-1">
             {bedroomImages.map((item, index) => (
               <ImageCard item={item} key={index} />
             ))}
@@ -203,7 +203,7 @@ export default function PhotosSection() {
           ref={bathroomsRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Bathrooms</h3>
-          <div className="flex flex-row w-full overflow-x-scroll gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5 scrollbar scrollbar-thumb-primaryAccent scrollbar-track-transparent pb-1">
             {bathroomImages.map((item, index) => (
               <ImageCard item={item} key={index} />
             ))}
@@ -216,7 +216,7 @@ export default function PhotosSection() {
           ref={laundryRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Laundry</h3>
-          <div className="flex flex-row w-full overflow-x-scroll gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5 scrollbar scrollbar-thumb-primaryAccent scrollbar-track-transparent pb-1">
             {laundryImages.map((item, index) => (
               <ImageCard item={item} key={index} />
             ))}
