@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function PhotosPage() {
   return (
-    <main className="mt-[var(--headerHeightMobile)] lg:mt-[var(--headerHeightDesktop)] px-5 pt-5 pb-10">
+    <main className="mt-[var(--headerHeightMobile)] lg:mt-[var(--headerHeightDesktop)] pt-5 pb-10">
       <PhotosSection />
     </main>
   );
