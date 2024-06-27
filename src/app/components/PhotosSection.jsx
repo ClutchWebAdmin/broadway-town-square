@@ -132,7 +132,7 @@ export default function PhotosSection() {
           ref={livingAreaRef}
         >
           <h3 className="lg:hidden text-2xl">Living Area</h3>
-          <div className="flex flex-row gap-5 overflow-x-auto w-full">
+          <div className="flex flex-row gap-5 overflow-x-scroll w-full">
             <Image
               src={livingRoom1}
               alt="Living room"
@@ -170,7 +170,7 @@ export default function PhotosSection() {
           ref={kitchenRef}
         >
           <h3 className="lg:hidden text-2xl">Kitchen</h3>
-          <div className="flex flex-row w-full overflow-x-auto gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5">
             <Image
               src={kitchen1}
               alt="Kitchen"
@@ -201,7 +201,7 @@ export default function PhotosSection() {
           ref={bedroomsRef}
         >
           <h3 className="lg:hidden text-2xl">Bedrooms</h3>
-          <div className="flex flex-row w-full overflow-x-auto gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5">
             <Image
               src={bedroom4}
               alt="Bedroom"
@@ -241,7 +241,7 @@ export default function PhotosSection() {
           ref={bathroomsRef}
         >
           <h3 className="lg:hidden text-2xl">Bathrooms</h3>
-          <div className="flex flex-row w-full overflow-x-auto gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5">
             <Image
               src={bathroom1}
               alt="Bathroom"
@@ -263,7 +263,7 @@ export default function PhotosSection() {
           ref={laundryRef}
         >
           <h3 className="lg:hidden text-2xl">Laundry</h3>
-          <div className="flex flex-row w-full overflow-x-auto gap-5">
+          <div className="flex flex-row w-full overflow-x-scroll gap-5">
             <Image
               src={laundry1}
               alt="Laundry"
