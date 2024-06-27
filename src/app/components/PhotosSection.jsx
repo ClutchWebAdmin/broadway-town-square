@@ -20,6 +20,37 @@ import bathroom2 from "../../../public/images/bathroom-2.png";
 import laundry1 from "../../../public/images/laundry-1.png";
 import laundry2 from "../../../public/images/laundry-2.png";
 
+const livingAreaImages = [
+  { src: livingRoom1, alt: "Living room" },
+  { src: livingRoom2, alt: "Living room" },
+  { src: livingRoom3, alt: "Living room" },
+  { src: livingRoom4, alt: "Living room" },
+];
+
+const kitchenImages = [
+  { src: kitchen1, alt: "Kitchen" },
+  { src: kitchen2, alt: "Kitchen" },
+  { src: kitchen3, alt: "Kitchen" },
+];
+
+const bedroomImages = [
+  { src: bedroom1, alt: "Bedroom" },
+  { src: bedroom2, alt: "Bedroom" },
+  { src: bedroom3, alt: "Bedroom" },
+  { src: bedroom4, alt: "Bedroom" },
+  { src: bedroom5, alt: "Bedroom" },
+];
+
+const bathroomImages = [
+  { src: bathroom1, alt: "Bathroom" },
+  { src: bathroom2, alt: "Bathroom" },
+];
+
+const laundryImages = [
+  { src: laundry1, alt: "Laundry" },
+  { src: laundry2, alt: "Laundry" },
+];
+
 export default function PhotosSection() {
   const [activeSection, setActiveSection] = useState("living-area");
 
@@ -133,34 +164,16 @@ export default function PhotosSection() {
         >
           <h3 className="lg:hidden text-2xl pt-5">Living Area</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
-            <Image
-              src={livingRoom1}
-              alt="Living room"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={livingRoom2}
-              alt="Living room"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={livingRoom3}
-              alt="Living room"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={livingRoom4}
-              alt="Living room"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
+            {livingAreaImages.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+                priority
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
 
@@ -171,27 +184,16 @@ export default function PhotosSection() {
         >
           <h3 className="lg:hidden text-2xl pt-5">Kitchen</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
-            <Image
-              src={kitchen1}
-              alt="Kitchen"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={kitchen2}
-              alt="Kitchen"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={kitchen3}
-              alt="Kitchen"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
+            {kitchenImages.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+                priority
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
 
@@ -202,41 +204,16 @@ export default function PhotosSection() {
         >
           <h3 className="lg:hidden text-2xl pt-5">Bedrooms</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
-            <Image
-              src={bedroom1}
-              alt="Bedroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={bedroom2}
-              alt="Bedroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={bedroom3}
-              alt="Bedroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={bedroom4}
-              alt="Bedroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={bedroom5}
-              alt="Bedroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
+            {bedroomImages.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+                priority
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
 
@@ -247,20 +224,16 @@ export default function PhotosSection() {
         >
           <h3 className="lg:hidden text-2xl pt-5">Bathrooms</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
-            <Image
-              src={bathroom1}
-              alt="Bathroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={bathroom2}
-              alt="Bathroom"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
+            {bathroomImages.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+                priority
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
 
@@ -271,24 +244,20 @@ export default function PhotosSection() {
         >
           <h3 className="lg:hidden text-2xl pt-5">Laundry</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
-            <Image
-              src={laundry1}
-              alt="Laundry"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
-            <Image
-              src={laundry2}
-              alt="Laundry"
-              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-              priority
-              placeholder="blur"
-            />
+            {laundryImages.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+                priority
+                placeholder="blur"
+              />
+            ))}
           </div>
         </div>
 
-        <p className="text-xs">
+        <p className="text-xs pt-5">
           Disclaimer: The images provided are for illustrative purposes only and
           may not represent the exact layout, design, or features of the actual
           apartments. Please refer to the leasing office for specific details
