@@ -103,7 +103,7 @@ export default function PhotosSection() {
     <section className="flex flex-col w-full lg:flex-row gap-5 text-lg">
       <div className="flex flex-col w-full lg:w-1/3 pl-5">
         <div className="flex flex-col w-full lg:sticky lg:top-0 pt-5">
-          <h1 className="text-5xl mb-10">Photos</h1>
+          <h1 className="text-5xl lg:text-6xl 2xl:text-7xl mb-10">Photos</h1>
           <Link
             href="#living-area"
             className={`border-b py-3 cursor-pointer lg:hover:text-primaryAccent transition duration-300 ${

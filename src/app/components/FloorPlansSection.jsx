@@ -45,7 +45,7 @@ export default function FloorPlansSection() {
     <section className="flex flex-col lg:flex-row lg:gap-10 text-lg">
       <div className="flex flex-col w-full lg:w-1/3">
         <div className=" flex flex-col gap-2"></div>
-        <h1 className="text-5xl mb-10">Floor Plans</h1>
+        <h1 className="text-5xl lg:text-6xl 2xl:text-7xl mb-10">Floor Plans</h1>
         <p
           className={`border-b py-3 cursor-pointer lg:hover:text-primaryAccent transition duration-300 ${
             selectedLayout === "A"
