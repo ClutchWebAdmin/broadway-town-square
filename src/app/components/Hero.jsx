@@ -8,6 +8,7 @@ export default function Hero() {
         src={placeholder}
         className="w-full h-full object-cover"
         alt="Sketch of Broadway Town Square"
+        quality={100}
         priority
         placeholder="blur"
       />
