@@ -19,6 +19,7 @@ import bathroom1 from "../../../public/images/bathroom-1.png";
 import bathroom2 from "../../../public/images/bathroom-2.png";
 import laundry1 from "../../../public/images/laundry-1.png";
 import laundry2 from "../../../public/images/laundry-2.png";
+import ImageCard from "./ImageCard";
 
 const livingAreaImages = [
   { src: livingRoom1, alt: "Living room" },
@@ -165,14 +166,7 @@ export default function PhotosSection() {
           <h3 className="lg:hidden text-2xl pt-5">Living Area</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             {livingAreaImages.map((item, index) => (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-                priority
-                placeholder="blur"
-              />
+              <ImageCard item={item} key={index} />
             ))}
           </div>
         </div>
@@ -185,14 +179,7 @@ export default function PhotosSection() {
           <h3 className="lg:hidden text-2xl pt-5">Kitchen</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             {kitchenImages.map((item, index) => (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-                priority
-                placeholder="blur"
-              />
+              <ImageCard item={item} key={index} />
             ))}
           </div>
         </div>
@@ -205,14 +192,7 @@ export default function PhotosSection() {
           <h3 className="lg:hidden text-2xl pt-5">Bedrooms</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             {bedroomImages.map((item, index) => (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-                priority
-                placeholder="blur"
-              />
+              <ImageCard item={item} key={index} />
             ))}
           </div>
         </div>
@@ -225,14 +205,7 @@ export default function PhotosSection() {
           <h3 className="lg:hidden text-2xl pt-5">Bathrooms</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             {bathroomImages.map((item, index) => (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-                priority
-                placeholder="blur"
-              />
+              <ImageCard item={item} key={index} />
             ))}
           </div>
         </div>
@@ -245,14 +218,7 @@ export default function PhotosSection() {
           <h3 className="lg:hidden text-2xl pt-5">Laundry</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             {laundryImages.map((item, index) => (
-              <Image
-                key={index}
-                src={item.src}
-                alt={item.alt}
-                className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
-                priority
-                placeholder="blur"
-              />
+              <ImageCard item={item} key={index} />
             ))}
           </div>
         </div>
