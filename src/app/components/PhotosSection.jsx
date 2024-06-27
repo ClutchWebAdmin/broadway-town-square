@@ -29,7 +29,6 @@ export default function PhotosSection() {
   const bedroomsRef = useRef(null);
   const bathroomsRef = useRef(null);
   const laundryRef = useRef(null);
-  const lobbyRef = useRef(null);
 
   useEffect(() => {
     const options = {
@@ -52,7 +51,6 @@ export default function PhotosSection() {
       bedroomsRef,
       bathroomsRef,
       laundryRef,
-      lobbyRef,
     ];
 
     sections.forEach((section) => {
@@ -124,16 +122,6 @@ export default function PhotosSection() {
             }`}
           >
             Laundry
-          </Link>
-          <Link
-            href="#lobby"
-            className={`border-b py-3 cursor-pointer lg:hover:text-primaryAccent transition duration-300 ${
-              activeSection === "lobby"
-                ? "text-primaryDark border-primaryDark text-xl"
-                : "text-gray-400"
-            }`}
-          >
-            Lobby
           </Link>
         </div>
       </div>
@@ -276,16 +264,6 @@ export default function PhotosSection() {
           </div>
         </div>
 
-        <div id="lobby" className="flex flex-col gap-5 lg:gap-0" ref={lobbyRef}>
-          <h3 className="lg:hidden text-2xl">Lobby</h3>
-          <div className="flex flex-row overflow-x-auto gap-5">
-            <Image
-              src={lobby}
-              alt="Lobby"
-              className="w-5/6 h-auto object-cover"
-            />
-          </div>
-        </div>
         <p className="text-xs">
           Disclaimer: The images provided are for illustrative purposes only and
           may not represent the exact layout, design, or features of the actual
