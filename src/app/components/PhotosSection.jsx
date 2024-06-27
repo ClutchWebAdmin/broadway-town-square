@@ -33,7 +33,7 @@ export default function PhotosSection() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.65,
+      threshold: 0.6,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -68,9 +68,9 @@ export default function PhotosSection() {
   }, []);
 
   return (
-    <section className="flex flex-col w-full lg:flex-row gap-10 text-lg">
-      <div className="flex flex-col w-full lg:w-1/3">
-        <div className="flex flex-col w-full lg:sticky lg:top-0 pt-5 ml-5">
+    <section className="flex flex-col w-full lg:flex-row gap-5 text-lg">
+      <div className="flex flex-col w-full lg:w-1/3 pl-5">
+        <div className="flex flex-col w-full lg:sticky lg:top-0 pt-5">
           <h1 className="text-5xl mb-10">Photos</h1>
           <Link
             href="#living-area"
@@ -125,7 +125,7 @@ export default function PhotosSection() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full lg:w-2/3 gap-5 pt-5 ml-5 lg:ml-0">
+      <div className="flex flex-col w-full lg:w-2/3 overflow-hidden gap-5 lg:gap-y-10 pt-5 pl-5 lg:pl-0">
         <div
           id="living-area"
           className="flex flex-col gap-5 w-full lg:gap-0"
@@ -136,28 +136,28 @@ export default function PhotosSection() {
             <Image
               src={livingRoom1}
               alt="Living room"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom2}
               alt="Living room"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom3}
               alt="Living room"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom4}
               alt="Living room"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
@@ -166,7 +166,7 @@ export default function PhotosSection() {
 
         <div
           id="kitchen"
-          className="flex flex-col w-full gap-5 lg:gap-0 pt-5"
+          className="flex flex-col gap-5 w-full lg:gap-0"
           ref={kitchenRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Kitchen</h3>
@@ -174,21 +174,21 @@ export default function PhotosSection() {
             <Image
               src={kitchen1}
               alt="Kitchen"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={kitchen2}
               alt="Kitchen"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={kitchen3}
               alt="Kitchen"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
               priority
               placeholder="blur"
             />
@@ -197,39 +197,44 @@ export default function PhotosSection() {
 
         <div
           id="bedrooms"
-          className="flex flex-col w-full gap-5 lg:gap-0 pt-5"
+          className="flex flex-col gap-5 w-full lg:gap-0"
           ref={bedroomsRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Bedrooms</h3>
           <div className="flex flex-row w-full overflow-x-scroll gap-5">
             <Image
-              src={bedroom4}
+              src={bedroom1}
               alt="Bedroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
             <Image
               src={bedroom2}
               alt="Bedroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
             <Image
               src={bedroom3}
               alt="Bedroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
+              placeholder="blur"
+            />
+            <Image
+              src={bedroom4}
+              alt="Bedroom"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
             <Image
               src={bedroom5}
               alt="Bedroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
-              placeholder="blur"
-            />
-            <Image
-              src={bedroom1}
-              alt="Bedroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
           </div>
@@ -237,7 +242,7 @@ export default function PhotosSection() {
 
         <div
           id="bathrooms"
-          className="flex flex-col w-full gap-5 lg:gap-0 pt-5"
+          className="flex flex-col gap-5 w-full lg:gap-0"
           ref={bathroomsRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Bathrooms</h3>
@@ -245,13 +250,15 @@ export default function PhotosSection() {
             <Image
               src={bathroom1}
               alt="Bathroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
             <Image
               src={bathroom2}
               alt="Bathroom"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
           </div>
@@ -259,7 +266,7 @@ export default function PhotosSection() {
 
         <div
           id="laundry"
-          className="flex flex-col w-full gap-5 lg:gap-0 pt-5"
+          className="flex flex-col gap-5 w-full lg:gap-0"
           ref={laundryRef}
         >
           <h3 className="lg:hidden text-2xl pt-5">Laundry</h3>
@@ -267,13 +274,15 @@ export default function PhotosSection() {
             <Image
               src={laundry1}
               alt="Laundry"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
             <Image
               src={laundry2}
               alt="Laundry"
-              className="flex w-5/6 lg:w-auto h-fit object-cover"
+              className="flex w-5/6 lg:min-w-[550px] xl:min-w-[700px] 2xl:min-w-[800px] h-auto object-cover"
+              priority
               placeholder="blur"
             />
           </div>
