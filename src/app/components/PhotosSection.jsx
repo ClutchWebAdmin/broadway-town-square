@@ -136,28 +136,28 @@ export default function PhotosSection() {
             <Image
               src={livingRoom1}
               alt="Living room"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom2}
               alt="Living room"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom3}
               alt="Living room"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={livingRoom4}
               alt="Living room"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
@@ -174,21 +174,21 @@ export default function PhotosSection() {
             <Image
               src={kitchen1}
               alt="Kitchen"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={kitchen2}
               alt="Kitchen"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
             <Image
               src={kitchen3}
               alt="Kitchen"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
               placeholder="blur"
             />
@@ -205,31 +205,31 @@ export default function PhotosSection() {
             <Image
               src={bedroom4}
               alt="Bedroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={bedroom2}
               alt="Bedroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={bedroom3}
               alt="Bedroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={bedroom5}
               alt="Bedroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={bedroom1}
               alt="Bedroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
           </div>
@@ -245,13 +245,13 @@ export default function PhotosSection() {
             <Image
               src={bathroom1}
               alt="Bathroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={bathroom2}
               alt="Bathroom"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
           </div>
@@ -267,13 +267,13 @@ export default function PhotosSection() {
             <Image
               src={laundry1}
               alt="Laundry"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
             <Image
               src={laundry2}
               alt="Laundry"
-              className="flex w-full h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               placeholder="blur"
             />
           </div>
