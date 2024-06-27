@@ -125,14 +125,14 @@ export default function PhotosSection() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full lg:w-2/3 gap-10 pt-5">
+      <div className="flex flex-col w-full lg:w-2/3 border border-red-400 gap-10 pt-5">
         <div
           id="living-area"
-          className="flex flex-col gap-5 w-full lg:gap-0"
+          className="flex flex-col gap-5 overflow-x-scroll border border-green-400 w-full lg:gap-0"
           ref={livingAreaRef}
         >
           <h3 className="lg:hidden text-2xl">Living Area</h3>
-          <div className="flex flex-row gap-5 overflow-x-scroll w-full">
+          <div className="flex flex-row gap-5 border border-blue-500">
             <Image
               src={livingRoom1}
               alt="Living room"
