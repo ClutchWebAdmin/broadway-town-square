@@ -19,7 +19,6 @@ import bathroom1 from "../../../public/images/bathroom-1.png";
 import bathroom2 from "../../../public/images/bathroom-2.png";
 import laundry1 from "../../../public/images/laundry-1.png";
 import laundry2 from "../../../public/images/laundry-2.png";
-import lobby from "../../../public/images/lobby.png";
 
 export default function PhotosSection() {
   const [activeSection, setActiveSection] = useState("living-area");
@@ -139,24 +138,28 @@ export default function PhotosSection() {
               alt="Living room"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
             <Image
               src={livingRoom2}
               alt="Living room"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
             <Image
               src={livingRoom3}
               alt="Living room"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
             <Image
               src={livingRoom4}
               alt="Living room"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
           </div>
         </div>
@@ -173,18 +176,21 @@ export default function PhotosSection() {
               alt="Kitchen"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
             <Image
               src={kitchen2}
               alt="Kitchen"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
             <Image
               src={kitchen3}
               alt="Kitchen"
               className="flex w-5/6 h-auto object-cover"
               priority
+              placeholder="blur"
             />
           </div>
         </div>
@@ -200,26 +206,31 @@ export default function PhotosSection() {
               src={bedroom4}
               alt="Bedroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={bedroom2}
               alt="Bedroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={bedroom3}
               alt="Bedroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={bedroom5}
               alt="Bedroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={bedroom1}
               alt="Bedroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -235,11 +246,13 @@ export default function PhotosSection() {
               src={bathroom1}
               alt="Bathroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={bathroom2}
               alt="Bathroom"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -255,11 +268,13 @@ export default function PhotosSection() {
               src={laundry1}
               alt="Laundry"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
             <Image
               src={laundry2}
               alt="Laundry"
               className="flex w-5/6 h-auto object-cover"
+              placeholder="blur"
             />
           </div>
         </div>
