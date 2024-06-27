@@ -129,7 +129,7 @@ export default function PhotosSection() {
       <div className="flex flex-col w-full lg:w-2/3 gap-10 pt-5">
         <div
           id="living-area"
-          className="flex flex-col gap-5 lg:gap-0"
+          className="flex flex-col gap-5 w-full lg:gap-0"
           ref={livingAreaRef}
         >
           <h3 className="lg:hidden text-2xl">Living Area</h3>
@@ -137,25 +137,25 @@ export default function PhotosSection() {
             <Image
               src={livingRoom1}
               alt="Living room"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
             <Image
               src={livingRoom2}
               alt="Living room"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
             <Image
               src={livingRoom3}
               alt="Living room"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
             <Image
               src={livingRoom4}
               alt="Living room"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
           </div>
@@ -163,7 +163,7 @@ export default function PhotosSection() {
 
         <div
           id="kitchen"
-          className="flex flex-col gap-5 lg:gap-0"
+          className="flex flex-col w-full gap-5 lg:gap-0"
           ref={kitchenRef}
         >
           <h3 className="lg:hidden text-2xl">Kitchen</h3>
@@ -171,19 +171,19 @@ export default function PhotosSection() {
             <Image
               src={kitchen1}
               alt="Kitchen"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
             <Image
               src={kitchen2}
               alt="Kitchen"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
             <Image
               src={kitchen3}
               alt="Kitchen"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
               priority
             />
           </div>
@@ -191,7 +191,7 @@ export default function PhotosSection() {
 
         <div
           id="bedrooms"
-          className="flex flex-col gap-5 lg:gap-0"
+          className="flex flex-col w-full gap-5 lg:gap-0"
           ref={bedroomsRef}
         >
           <h3 className="lg:hidden text-2xl">Bedrooms</h3>
@@ -199,34 +199,34 @@ export default function PhotosSection() {
             <Image
               src={bedroom4}
               alt="Bedroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={bedroom2}
               alt="Bedroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={bedroom3}
               alt="Bedroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={bedroom5}
               alt="Bedroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={bedroom1}
               alt="Bedroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
           </div>
         </div>
 
         <div
           id="bathrooms"
-          className="flex flex-col gap-5 lg:gap-0"
+          className="flex flex-col w-full gap-5 lg:gap-0"
           ref={bathroomsRef}
         >
           <h3 className="lg:hidden text-2xl">Bathrooms</h3>
@@ -234,19 +234,19 @@ export default function PhotosSection() {
             <Image
               src={bathroom1}
               alt="Bathroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={bathroom2}
               alt="Bathroom"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
           </div>
         </div>
 
         <div
           id="laundry"
-          className="flex flex-col gap-5 lg:gap-0"
+          className="flex flex-col w-full gap-5 lg:gap-0"
           ref={laundryRef}
         >
           <h3 className="lg:hidden text-2xl">Laundry</h3>
@@ -254,12 +254,12 @@ export default function PhotosSection() {
             <Image
               src={laundry1}
               alt="Laundry"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
             <Image
               src={laundry2}
               alt="Laundry"
-              className="w-5/6 h-auto object-cover"
+              className="flex w-5/6 h-auto object-cover"
             />
           </div>
         </div>
