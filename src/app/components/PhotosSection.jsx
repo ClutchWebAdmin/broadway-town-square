@@ -150,21 +150,25 @@ export default function PhotosSection() {
               src={livingRoom1}
               alt="Living room"
               className="w-5/6 h-auto object-cover"
+              priority
             />
             <Image
               src={livingRoom2}
               alt="Living room"
               className="w-5/6 h-auto object-cover"
+              priority
             />
             <Image
               src={livingRoom3}
               alt="Living room"
               className="w-5/6 h-auto object-cover"
+              priority
             />
             <Image
               src={livingRoom4}
               alt="Living room"
               className="w-5/6 h-auto object-cover"
+              priority
             />
           </div>
         </div>
@@ -180,16 +184,19 @@ export default function PhotosSection() {
               src={kitchen1}
               alt="Kitchen"
               className="w-5/6 h-auto object-cover"
+              priority
             />
             <Image
               src={kitchen2}
               alt="Kitchen"
               className="w-5/6 h-auto object-cover"
+              priority
             />
             <Image
               src={kitchen3}
               alt="Kitchen"
               className="w-5/6 h-auto object-cover"
+              priority
             />
           </div>
         </div>
