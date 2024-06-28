@@ -6,7 +6,7 @@ export default function TheHeader() {
   return (
     <header className="absolute w-full">
       <nav className="flex flex-row items-start w-full h-fit justify-between p-5">
-        <Link className="flex w-fit text-lg lg:text-2xl" href="/">
+        <Link className="flex w-fit text-xl lg:text-2xl" href="/">
           Broadway Town Square
         </Link>
 

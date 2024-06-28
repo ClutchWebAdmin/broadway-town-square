@@ -49,11 +49,11 @@ export default function MobileMenu() {
 
       {isMobileMenuOpen && (
         <nav className="lg:hidden fixed flex flex-col h-full inset-0 bg-primaryDark text-primaryLight opacity-[98%] z-[9000] animate__animated animate__slideInDown">
-          <Link href={`/`} className="py-5 px-5 border-b text-lg">
+          <Link href={`/`} className="py-5 px-5 border-b text-xl">
             Broadway Town Square
           </Link>
 
-          <div className="flex flex-col h-full items-start justify-start text-4xl">
+          <div className="flex flex-col h-full items-start justify-start text-5xl">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
