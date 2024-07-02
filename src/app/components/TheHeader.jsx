@@ -15,7 +15,7 @@ export default function TheHeader() {
             <Link
               key={index}
               href={item.linkTo}
-              className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300 cur"
+              className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
             >
               {item.text}
             </Link>
