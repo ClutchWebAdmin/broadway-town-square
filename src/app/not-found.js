@@ -19,7 +19,6 @@ export default function Error({ error }) {
           <p>The requested page cannot be found.</p>
           <Link
             href={`/`}
-            className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
             className="bg-primaryDark hover:bg-gray-100 hover:text-primaryDark transition-colors duration-200 ease-in-out rounded text-primaryLight px-4 py-2 font-medium"
           >
             Go home
