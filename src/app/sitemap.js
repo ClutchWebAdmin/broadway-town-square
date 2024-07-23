@@ -7,7 +7,7 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://broadwaytownsquare.com/floor-plans",
+      url: "https://broadwaytownsquare.com/floor-plans-and-pricing",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,

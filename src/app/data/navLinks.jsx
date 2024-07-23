@@ -1,7 +1,7 @@
 export const navLinks = [
   {
-    text: "Floor Plans",
-    linkTo: "/floor-plans",
+    text: "Floor Plans & Pricing",
+    linkTo: "/floor-plans-and-pricing",
   },
   {
     text: "Photos",
