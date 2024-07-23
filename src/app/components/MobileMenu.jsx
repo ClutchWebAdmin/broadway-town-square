@@ -53,7 +53,7 @@ export default function MobileMenu() {
             Broadway Town Square
           </Link>
 
-          <div className="flex flex-col h-full items-start justify-start text-5xl">
+          <div className="flex flex-col h-full items-start justify-start text-4xl">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
@@ -64,6 +64,14 @@ export default function MobileMenu() {
                 {item.text}
               </Link>
             ))}
+            <a
+              href="https://maps.app.goo.gl/yHigL7E2mT5PumdK6"
+              target="_blank"
+              className="border-b w-full p-5 hover:text-primaryAccent"
+              onClick={toggleMobileMenu}
+            >
+              Location
+            </a>
             <a
               href="mailto:propertymanager@clutchindustries.com"
               target="_blank"
@@ -81,13 +89,6 @@ export default function MobileMenu() {
               Call Us
             </a>
           </div>
-          <h3 className="p-5 text-lg">
-            Address:
-            <br />
-            1127 Broadway St NE
-            <br />
-            Salem, Oregon 97301
-          </h3>
         </nav>
       )}
     </>

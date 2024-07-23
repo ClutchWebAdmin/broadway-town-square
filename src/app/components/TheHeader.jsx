@@ -21,6 +21,13 @@ export default function TheHeader() {
             </Link>
           ))}
           <a
+            href="https://maps.app.goo.gl/yHigL7E2mT5PumdK6"
+            target="_blank"
+            className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
+          >
+            Location
+          </a>
+          <a
             href="mailto:propertymanager@clutchindustries.com"
             target="_blank"
             className="hover:bg-gray-100 px-2 py-0.5 rounded-md transition duration-300"
