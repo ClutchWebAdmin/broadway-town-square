@@ -23,6 +23,7 @@ export default function FloorPlansSection() {
     sqMeter: 107,
     priceMin: "1695",
     priceMax: "2195",
+    available: true,
   };
 
   const layoutB = {
@@ -41,6 +42,7 @@ export default function FloorPlansSection() {
     sqMeter: 100,
     priceMin: "1695",
     priceMax: "2195",
+    available: true,
   };
 
   const currentLayout = selectedLayout === "A" ? layoutA : layoutB;
@@ -101,12 +103,33 @@ export default function FloorPlansSection() {
         </div>
       </div>
 
-      <div className="hidden lg:flex flex-col w-full lg:w-2/3">
+      <div className="hidden relative lg:flex flex-col w-full lg:w-2/3">
         <Image
           src={currentLayout.imageUrl}
           alt={`Layout ${selectedLayout}`}
           className="w-auto h-auto"
         />
+
+        {currentLayout.available ? (
+          <div className="absolute top-0 right-0 p-5 flex flex-row gap-2 text-base">
+            <p className="bg-green-900 px-2 py-0.5 h-fit w-fit rounded-md text-primaryLight p-2">
+              Available
+            </p>
+            <a
+              href="mailto:propertymanager@clutchindustries.com"
+              target="_blank"
+              className="bg-gray-100 px-2 py-0.5 h-fit w-fit rounded-md"
+            >
+              Apply Now
+            </a>
+          </div>
+        ) : (
+          <div className="absolute top-0 right-0 p-5 flex flex-row gap-2 text-base">
+            <p className="bg-gray-100 px-2 py-0.5 h-fit w-fit rounded-md">
+              Not Available
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
