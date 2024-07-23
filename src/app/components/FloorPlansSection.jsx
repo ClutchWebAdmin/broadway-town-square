@@ -21,6 +21,8 @@ export default function FloorPlansSection() {
     ],
     sqFeet: 1156,
     sqMeter: 107,
+    priceMin: "1695",
+    priceMax: "2195",
   };
 
   const layoutB = {
@@ -37,6 +39,8 @@ export default function FloorPlansSection() {
     ],
     sqFeet: 1078,
     sqMeter: 100,
+    priceMin: "1695",
+    priceMax: "2195",
   };
 
   const currentLayout = selectedLayout === "A" ? layoutA : layoutB;
@@ -66,6 +70,13 @@ export default function FloorPlansSection() {
         >
           Layout B
         </p>
+
+        <div className="flex flex-col gap-2 py-3 mt-10 border-b border-gray-400 ">
+          <h6>Price</h6>
+          <p className="text-4xl">
+            ${currentLayout.priceMin}-${currentLayout.priceMax}/mo
+          </p>
+        </div>
 
         <div className="flex flex-col gap-2 py-3 mt-10 border-b border-gray-400 ">
           <h6>Interior Area</h6>
