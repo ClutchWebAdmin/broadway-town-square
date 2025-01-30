@@ -19,7 +19,7 @@ export default function TheFooter() {
         Clutch Property Management
       </a>
       <h6 className="flex justify-center order-3 lg:order-2">
-        © 2024 Broadway Town Square
+        © 2025 Broadway Town Square
       </h6>
     </footer>
   );
