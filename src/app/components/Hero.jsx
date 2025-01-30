@@ -1,5 +1,5 @@
 import Image from "next/image";
-import placeholder from "../../../public/images/hero.png";
+import placeholder from "../../../public/images/BroadwayTownSquare.jpg";
 
 export default function Hero() {
   return (
